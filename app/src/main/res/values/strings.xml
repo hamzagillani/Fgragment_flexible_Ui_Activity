@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+
+
+    <string name="app_name">Fragment Flexible UI Activity</string>
+    <string-array name="chapters">
+        <item>Activites</item>
+        <item>Services</item>
+        <item>Content Provider</item>
+        <item>Intent and Intent Filter</item>
+    </string-array>
+
+    <!--<string-array name="description">
+        <item>An activity is the entry point for interacting with the user.It represents a single screen with a user interface. For example, an email app might have one activity that shows a list of new emails, another activity to compose an email, and another activity for reading emails.</item>
+        <item>A service is a general-purpose entry point for keeping an app running in the background for all kinds of reasons. It is a component that runs in the background to perform long-running operations or to perform work for remote processes. A service does not provide a user interface.
+            For example, a service might play music in the background while the user is in a different app, or it might fetch data over the network without blocking user interaction with an activity. Another component, such as an activity, can start the service and let it run or bind to it in order to interact with it.
+            There are actually two very distinct semantics services tell the system about how to manage an app: Started services tell the system to keep them running until their work is completed. This could be to sync some data in the background or play music even after the user leaves the app.</item>
+        <item>A content provider manages a shared set of app data that you can store in the file system, in a SQLite database, on the web, or on any other persistent storage location that your app can access.</item>
+        <item>mit on 7-8 November 2018, starting at 10AM PDT!Intents and Intent Filters An Intent is a messaging object you can use to request an action from another app component.</item>
+    </string-array>-->
+
+ <string-array name="description">
+        <item>
+            An Intent is a messaging object you can use to request an action from another app component.
+            Although intents facilitate communication between components in several ways, there are three fundamental use cases.An Activity represents a single screen in an app. You can start a new instance of an Activity by passing an Intent to startActivity.The Intent describes the activity to start and carries any necessary data.
+        </item>
+
+        <item>
+            A service is a general-purpose entry point for keeping an app running in the background for all kinds of reasons.It is a component that runs in the background to perform long running operations or to perform work for remote processes.
+            A service does not provide a user interface. For example, a service might play music in the background while the user is in a different app,or it might fetch data over the network without blocking user interaction with an activity.
+            Another component, such as an activity, can start the service and let it run or bind to it in order to interact with it.There are actually two very distinct semantics services tell the system about how to manage an app.Started services tell the system to keep them running until their work is completed.
+        </item>
+
+
+        <item>
+             A content provider manages a shared set of app data that you can store in the file system, in a SQLite database,on the web, or on any other persistent storage location that your app can access.
+             Through the content provider, other apps can query or modify the data if the content provider allows it.For example, the Android system provides a content provider that manages the users contact information.
+             As such, any app with the proper permissions can query the content provider, such as ContactsContract Data.
+             to read and write information about a particular person.
+        </item>
+
+
+        <item>
+            Explicit intents specify which application will satisfy the intent, by supplying either the target apps package name or a fully-qualified component class name.Implicit intents do not name a specific component, but instead declare a general action to perform, which allows a component from another app to handle it.For example,if you want to show the user a location on a map, you can use an implicit intent to request that another capable app show a specified location on a map.
+        </item>
+
+
+ </string-array>
+
+
+</resources>

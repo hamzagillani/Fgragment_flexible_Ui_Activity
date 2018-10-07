@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <fragment
+        android:id="@+id/fragment_a"
+        android:layout_weight="2"
+        android:name="com.digicon_valley.fgragment_flexible_ui_activity.FragmentA"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|center_vertical"
+        />
+
+    <fragment
+        android:id="@+id/fragment_b"
+        android:layout_weight="1"
+        android:name="com.digicon_valley.fgragment_flexible_ui_activity.FragmentB"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|center_vertical"
+        />
+
+
+</LinearLayout>
